@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: MIT
 #
 
-config BOARD_CORNEISH_ZEN_LEFT
+config BOARD_CORNE_LEFT
     bool
 
-config BOARD_CORNEISH_ZEN_RIGHT
+config BOARD_CORNE_RIGHT
     bool

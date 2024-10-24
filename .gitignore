@@ -4,4 +4,3 @@ zephyr/
 modules/
 tools/
 .west/
-.zmk/
