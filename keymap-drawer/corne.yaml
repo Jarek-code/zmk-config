@@ -4,43 +4,43 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - $$mdi:arrow-up-bold$$
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
   - A
+  - R
   - S
-  - D
-  - F
+  - T
   - G
   - $$mdi:arrow-down-bold$$
-  - H
-  - J
-  - K
-  - L
+  - M
+  - N
+  - E
+  - I
+  - O
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - $$mdi:arrow-left-bold$$
-  - N
-  - M
+  - K
+  - H
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
+  - $$mdi:volume-off$$
   - LGUI
   - lower
   - {t: '$$mdi:keyboard-space$$', h: '3'}
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '3'}
   - raise
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - LCLK
   lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -89,7 +89,7 @@ layers:
   - RGB BRD
   - END
   - PG DN
-  - $$mdi:volume-off$$
+  - RCLK
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
