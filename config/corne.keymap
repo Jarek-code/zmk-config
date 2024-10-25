@@ -34,7 +34,7 @@
             delay-ms = <0>;                   // 10
         };
 
-            // home row mods left
+
         hrm_a {
             compatible = "zmk,behavior-mod-tap";
             label = "HRM_A";
@@ -60,7 +60,7 @@
             bindings = <&kp LEFT_GUI>, <&kp T>;
         };
 
-            // home row mods right
+
         hrm_n {
             compatible = "zmk,behavior-mod-tap";
             label = "HRM_N";
