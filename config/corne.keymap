@@ -33,6 +33,58 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   // 10
         };
+
+            // home row mods left
+        hrm_a: hrm_a {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_A";
+            #binding-cells = <1>;
+            bindings = <&kp LEFT_SHIFT>, <&kp A>;
+        };
+        hrm_r: hrm_r {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_R";
+            #binding-cells = <1>;
+            bindings = <&kp LEFT_CTRL>, <&kp R>;
+        };
+        hrm_s: hrm_s {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_S";
+            #binding-cells = <1>;
+            bindings = <&kp LEFT_ALT>, <&kp S>;
+        };
+        hrm_t: hrm_t {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_T";
+            #binding-cells = <1>;
+            bindings = <&kp LEFT_GUI>, <&kp T>;
+        };
+
+            // home row mods right
+        hrm_n: hrm_n {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_N";
+            #binding-cells = <1>;
+            bindings = <&kp RIGHT_CTRL>, <&kp N>;
+        };
+        hrm_e: hrm_e {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_E";
+            #binding-cells = <1>;
+            bindings = <&kp RIGHT_ALT>, <&kp E>;
+        };
+        hrm_i: hrm_i {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_I";
+            #binding-cells = <1>;
+            bindings = <&kp RIGHT_GUI>, <&kp I>;
+        };
+        hrm_o: hrm_o {
+            compatible = "zmk,behavior-mod-tap";
+            label = "HRM_O";
+            #binding-cells = <1>;
+            bindings = <&kp RIGHT_SHIFT>, <&kp O>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -58,15 +110,16 @@
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
-            // | SHIFT |  A  |  R  |  S  |  T  |  G  |               ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
+            // | SHIFT|  A  |  R  |  S  |  T  |  G  |                ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
             // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  | ESC  |
-            //                 mute   | GUI | LWR | SPC |            →    | BKS | RSE  | ALT |
+            //                    | GUI | LWR | SPC |                →    | BKS | RSE  | ALT |
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp ENTER
-&td0       &kp A  &kp R      &kp S     &kp T  &kp G          &kp DOWN_ARROW   &kp M        &kp N  &kp E      &kp I    &kp O     &kp SEMI
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp D  &kp V          &kp LEFT_ARROW   &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q   &kp W      &kp F     &kp P   &kp B          &kp UP_ARROW     &kp J        &kp L   &kp U      &kp Y    &kp SQT   &kp ENTER
+&td0       &kp A   &kp R      &kp S     &kp T   &kp G          &kp DOWN_ARROW   &kp M        &kp N   &kp E      &kp I    &kp O     &kp SEMI
+&td0       &hrm_a  &hrm_r     &hrm_s    &hrm_t  &kp G          &kp DOWN_ARROW   &kp M        &hrm_n  &hrm_e     &hrm_i   &hrm_o    &kp SEMI
+&kp LCTRL  &kp Z   &kp X      &kp C     &kp D   &kp V          &kp LEFT_ARROW   &kp K        &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                   &kp C_MUTE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 4 BSPC  &mo 2  &kp LALT
                                                             &kp LCLK
             >;
