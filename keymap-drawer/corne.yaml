@@ -15,17 +15,17 @@ layers:
   - {t: '''', s: '"'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td0'
-  - '&hrm_a'
-  - '&hrm_r'
-  - '&hrm_s'
-  - '&hrm_t'
+  - A
+  - R
+  - S
+  - T
   - G
   - $$mdi:arrow-down-bold$$
   - M
-  - '&hrm_n'
-  - '&hrm_e'
-  - '&hrm_i'
-  - '&hrm_o'
+  - N
+  - E
+  - I
+  - O
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-control$$
   - Z
