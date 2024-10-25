@@ -54,14 +54,14 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "ARSTY";
 
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |                ↑    |  Y  |  U   |  I  |  O  |  P  | BKSP |      &kp UP_ARROW 
-            // | SHIFT |  A  |  S  |  D  |  F  |  G  |               ↓    |  H  |  J   |  K  |  L  |  ;  |  '   | 
-            // | CTRL |  Z  |  X  |  C  |  V  |  B  |                ←    |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |                →    | ENT | RSE  | ALT |
-            //                                                      enter
+            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | BKSP |      &kp UP_ARROW 
+            // | SHIFT |  A  |  R  |  S  |  T  |  G  |               ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
+            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  | ESC  |
+            //                 mute   | GUI | LWR | SPC |                →    | ENT | RSE  | ALT |
+            //                                                      click
 
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SQT     &kp BSPC
