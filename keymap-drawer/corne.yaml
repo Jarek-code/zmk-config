@@ -42,11 +42,11 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:volume-off$$
   - LGUI
-  - lower
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
+  - '&LT 2 SPACE'
+  - {t: '$$mdi:keyboard-tab$$', h: '3'}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', h: '4'}
-  - raise
+  - lower
   - $$mdi:apple-keyboard-option$$
   - LCLK
   lower:
@@ -91,11 +91,11 @@ layers:
   - PG DN
   - RCLK
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - INS
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   raise:
@@ -144,7 +144,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   '3':
