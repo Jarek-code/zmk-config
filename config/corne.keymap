@@ -33,6 +33,15 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   // 10
         };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -65,7 +74,7 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp ENTER
-&td0       &kp A  &kp R      &kp S     &kp T  &kp G          &kp DOWN_ARROW   &kp M        &kp N  &kp E      &kp I    &kp O     &kp SEMI
+&td0       &hm LCTRL A  &kp R      &kp S     &kp T  &kp G          &kp DOWN_ARROW   &kp M        &kp N  &kp E      &kp I    &kp O     &kp SEMI
 &kp LCTRL  &kp Z  &kp X      &kp C     &kp D  &kp V          &kp LEFT_ARROW   &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                   &kp C_MUTE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 4 BSPC  &mo 2  &kp LALT
                                                             &kp LCLK
