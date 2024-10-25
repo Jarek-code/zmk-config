@@ -54,41 +54,41 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "ARSTY";
+            display-name = "COLMAK";
 
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | BKSP |      &kp UP_ARROW 
+            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
             // | SHIFT |  A  |  R  |  S  |  T  |  G  |               ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
             // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  | ESC  |
-            //                 mute   | GUI | LWR | SPC |                →    | ENT | RSE  | ALT |
+            //                 mute   | GUI | LWR | SPC |            →    | BKS | RSE  | ALT |
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SQT     &kp BSPC
-&td0       &kp A  &kp R      &kp S     &kp T  &kp G          &kp DOWN_ARROW   &kp M        &kp N  &kp E      &kp I    &kp O  &kp SEMI
+&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp ENTER
+&td0       &kp A  &kp R      &kp S     &kp T  &kp G          &kp DOWN_ARROW   &kp M        &kp N  &kp E      &kp I    &kp O     &kp SEMI
 &kp LCTRL  &kp Z  &kp X      &kp C     &kp D  &kp V          &kp LEFT_ARROW   &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                  &kp C_MUTE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 3 ENTER  &mo 2  &kp LALT
+                  &kp C_MUTE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 4 BSPC  &mo 2  &kp LALT
                                                             &kp LCLK
             >;
 
-            label = "QWERTY";
+            label = "ALPHAS";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NUMBERS";
 
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
+            // |      |  6  |  7  |  8  |  9  |  0  |   | LFT  | DWN |  UP | RGT |     |     |
+            // | SHFT |     |     |     |     |     |   |      |     |     |     |     |     |
+            //                    | GUI |     | SPC |   | ENT  |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &kp N6           &kp N7          &kp N8        &kp N9        &kp N0             &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                         &kp RCLK      &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
+                         &kp RCLK        &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
                                                                                         &mkp LCLK
             >;
 
@@ -128,6 +128,20 @@
             >;
 
             label = "FN";
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            display-name = "SETUP";
+            bindings = <
+&trans  &kp F1      &kp F2      &kp F3       &kp F4     &kp F5      &mmv MOVE_UP     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans  &sys_reset  &trans      &bootloader  &trans     &mkp MB5    &mmv MOVE_LEFT   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                    &kp C_MUTE  &trans       &trans     &trans      &mmv MOVE_RIGHT  &trans       &trans     &trans
+                                                                    &mkp LCLK
+            >;
+
+            label = "SETUP";
             sensor-bindings = <&scroll_encoder>;
         };
     };
