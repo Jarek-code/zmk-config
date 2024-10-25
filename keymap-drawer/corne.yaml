@@ -16,16 +16,16 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td0'
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - R
-  - S
-  - T
+  - {t: R, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - $$mdi:arrow-down-bold$$
   - M
-  - N
-  - E
-  - I
-  - O
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: RGUI}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-control$$
   - Z
