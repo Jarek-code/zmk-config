@@ -33,6 +33,48 @@
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   // 10
         };
+
+        a_shift: mt_a_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_Shift";
+            bindings = <&kp LEFT_SHIFT>, <&kp A>;
+        };
+        r_gui: mt_r_gui {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_Gui";
+            bindings = <&kp LEFT_GUI>, <&kp R>;
+        };
+        s_alt: mt_s_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_Alt";
+            bindings = <&kp LEFT_ALT>, <&kp S>;
+        };
+        t_ctrl: mt_t_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_Ctrl";
+            bindings = <&kp LEFT_CTRL>, <&kp T>;
+        };
+
+        n_shift: mt_n_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N_Shift";
+            bindings = <&kp RIGHT_SHIFT>, <&kp N>;
+        };
+        e_gui: mt_e_gui {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_Gui";
+            bindings = <&kp RIGHT_GUI>, <&kp E>;
+        };
+        i_alt: mt_i_alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_Alt";
+            bindings = <&kp RIGHT_ALT>, <&kp I>;
+        };
+        o_ctrl: mt_o_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_Ctrl";
+            bindings = <&kp RIGHT_CTRL>, <&kp O>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -64,9 +106,9 @@
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp F     &kp P  &kp B          &kp UP_ARROW     &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp ENTER
-&td0       &kp A  &kp R      &kp S     &kp T  &kp G          &kp DOWN_ARROW   &kp M        &kp N  &kp E      &kp I    &kp O     &kp SEMI
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp D  &kp V          &kp LEFT_ARROW   &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q    &kp W      &kp F     &kp P   &kp B          &kp UP_ARROW     &kp J        &kp L    &kp U      &kp Y    &kp SQT   &kp ENTER
+&td0       &a_shift &r_gui     &s_alt    &t_ctrl &kp G          &kp DOWN_ARROW   &kp M        &n_shift &e_gui     &i_alt   &o_ctrl   &kp SEMI
+&kp LCTRL  &kp Z    &kp X      &kp C     &kp D   &kp V          &kp LEFT_ARROW   &kp K        &kp H    &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                   &kp C_MUTE  &kp LGUI  &mo 1  &lt 3 SPACE    &kp RIGHT_ARROW  &lt 4 BSPC  &mo 2  &kp LALT
                                                             &kp LCLK
             >;
