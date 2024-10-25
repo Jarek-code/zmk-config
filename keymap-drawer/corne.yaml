@@ -15,7 +15,7 @@ layers:
   - {t: '''', s: '"'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td0'
-  - A
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - R
   - S
   - T
