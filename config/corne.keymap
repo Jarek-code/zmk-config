@@ -68,15 +68,15 @@
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
             // | SHIFT|  A  |  R  |  S  |  T  |  G  |                ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
-            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  | ESC  |
-            //                 mute   | GUI | LWR | SPC |            →    | BKS | RSE  | ALT |
+            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  |  ↑   |
+            //                    | ESC | SPC | TAB |                →    | ENT | BCK  | DEL |
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J  &kp L        &kp U      &kp Y      &kp SQT     &kp ENTER
-&td0       &hm LCTRL A  &hm LGUI R &hm LALT S &hm LSHIFT T &kp G         &kp DOWN_ARROW       &kp M  &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
-&kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K  &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp ESC
-                        &kp C_MUTE  &kp LGUI  &lt 2 SPACE  &lt 3 TAB      &kp RIGHT_ARROW      &lt 4 BSPC  &mo 1  &kp LALT
+&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &kp ENTER
+&td0       &hm LCTRL A  &hm LGUI R &hm LALT S &hm LSHIFT T &kp G         &kp DOWN_ARROW       &kp M       &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
+&kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K       &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
+                        &kp C_MUTE &kp ESC    &lt 2 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 1 ENTER &lt 2 BSPC   &kp DEL
                                                             &kp LCLK
             >;
 
@@ -84,19 +84,19 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
-            display-name = "NUMBERS";
+        number_layer {
+            display-name = "NUMNAV";
 
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
-            // |      |  6  |  7  |  8  |  9  |  0  |   | LFT  | DWN |  UP | RGT |     |     |
-            // | SHFT |     |     |     |     |     |   |      |     |     |     |     |     |
+            // | RGBOF |  1  |  2  |  3  |  4  |  5  |   | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
+            // | RGBON |  6  |  7  |  8  |  9  |  0  |   | LFT  | DWN |  UP | RGT |     |     |
+            // | RGBEF |     |     |     |     |     |   |      |     |     |     |     |     |
             //                    | GUI |     | SPC |   | ENT  |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &kp N6           &kp N7          &kp N8        &kp N9        &kp N0             &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&rgb_ug RGB_OFF  &kp N1     &kp N2     &kp N3        &kp N4        &kp N5         &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&rgb_ug RGB_ON   &kp N6     &kp N7     &kp N8        &kp N9        &kp N0         &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&rgb_ug RGB_EFF  &trans     &trans     &trans        &trans        &trans         &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                          &kp RCLK        &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
                                                                                         &mkp LCLK
             >;
@@ -105,8 +105,8 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        nav_layer {
+            display-name = "SYMMVT";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
