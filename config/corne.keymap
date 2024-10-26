@@ -74,9 +74,9 @@
 
             bindings = <
 &kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &kp ENTER
-&td0       &hm LCTRL A  &hm LGUI R &hm LALT S &hm LSHIFT T &kp G         &kp DOWN_ARROW       &kp M       &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
+&kp CAPS   &hm LCTRL A  &hm LGUI R &hm LALT S &hm LSHIFT T &kp G         &kp DOWN_ARROW       &kp M       &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K       &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
-                        &kp C_MUTE &kp ESC    &lt 2 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 1 ENTER &lt 2 BSPC   &kp DEL
+                        &kp C_MUTE &kp ESC    &lt 1 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
                                                             &kp LCLK
             >;
 
@@ -88,16 +88,16 @@
             display-name = "NUMNAV";
 
             // -----------------------------------------------------------------------------------------
-            // | RGBOF |  1  |  2  |  3  |  4  |  5  |   | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
-            // | RGBON |  6  |  7  |  8  |  9  |  0  |   | LFT  | DWN |  UP | RGT |     |     |
-            // | RGBEF |     |     |     |     |     |   |      |     |     |     |     |     |
-            //                    | GUI |     | SPC |   | ENT  |     | ALT |
+            // | RGBOF |  [  |  7  |  8  |  9  |  ]  |   | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
+            // | RGBON |  ;  |  4  |  5  |  6  |  =  |   |      | LFT | DWN |  UP | RGT |     |
+            // | RGBEF |  `  |  1  |  2  |  3  |  \  |   | INS  | HOM | Pup | Pdn | END |     |
+            //                     |  .  |  0  |  -  |   | ENT  |     | DEL |
 
             bindings = <
-&rgb_ug RGB_OFF  &kp N1     &kp N2     &kp N3        &kp N4        &kp N5         &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&rgb_ug RGB_ON   &kp N6     &kp N7     &kp N8        &kp N9        &kp N0         &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&rgb_ug RGB_EFF  &trans     &trans     &trans        &trans        &trans         &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                         &kp RCLK        &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
+&rgb_ug RGB_OFF  &kp LBKT     &kp N7  &kp N8   &kp N9  &kp RBKT   &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&rgb_ug RGB_ON   &kp SEMI     &kp N4  &kp N5   &kp N6  &kp EQUAL  &mmv MOVE_DOWN   &trans           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans 
+&rgb_ug RGB_EFF  &kp GRAVE    &kp N1  &kp N2   &kp N3  &kp BSLH   &mmv MOVE_LEFT   &kp INS          &kp HOME      &kp PG_UP     &kp PG_DN     &kp END       &trans       
+                            &kp RCLK  &kp DOT  &kp N0  &kp MINUS  &mmv MOVE_RIGHT  &trans          &trans          &trans
                                                                                         &mkp LCLK
             >;
 
@@ -109,16 +109,16 @@
             display-name = "SYMMVT";
 
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  TAB |  {  |  &  |  *  |  () |  }  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |  :  |  $  |  %  |  ^  |  +  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |  ~  |  !  |  @  |  #  | "|" |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    |  (  |  )  |  _  |   |     |     |     |
 
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                      &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+&trans  &kp LBRC      &kp AMPS      &kp ASTRK  &kp LPAR   &kp RBRC     &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &kp COLON     &kp DLLR      &kp PRCNT  &kp CARET  &kp PLUS     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &kp TILDE     &kp EXCL      &kp AT     &kp HASH   &kp PIPE     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp PIPE
+                      &trans        &kp LPAR   &kp RPAR   &kp UNDER    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
                                                                        &mkp LCLK
             >;
 
