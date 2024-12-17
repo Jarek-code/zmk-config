@@ -139,6 +139,7 @@
             label = "FN";
             sensor-bindings = <&scroll_encoder>;
         };
+
         layer_4 {
             display-name = "GAMING";
 
@@ -151,13 +152,35 @@
 
             bindings = <
 &kp TAB    &kp Q        &kp W      &kp E      &kp R        &kp T         &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &tog 4
-&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &to 0
+&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &mo 5
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp V        &kp B         &kp LEFT_ARROW       &kp N       &kp M        &kp COMMA  &kp DOT    &kp FSLH    &trans
                         &kp C_MUTE &kp ESC    &kp SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
                                                             &kp LCLK
             >;
 
             label = "GAMING";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        layer_5 {
+            display-name = "GNUMB";
+
+            // --------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
+            // | SHIFT|  A  |  R  |  S  |  T  |  G  |                ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
+            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  |  ↑   |
+            //                    | ESC | SPC | TAB |                →    | ENT | BCK  | DEL |
+            //                                                      click
+
+            bindings = <
+&kp TAB    &kp LBKT     &kp N7  &kp N8   &kp N9  &kp RBKT      &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &trans
+&kp LSHIFT &kp SEMI     &kp N4  &kp N5   &kp N6  &kp EQUAL     &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &trans
+&kp LCTRL  &kp GRAVE    &kp N1  &kp N2   &kp N3  &kp BSLH      &kp LEFT_ARROW       &kp N       &kp M        &kp COMMA  &kp DOT    &kp FSLH    &trans
+                        &kp C_MUTE &kp ESC    &kp SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
+                                                            &kp LCLK
+            >;
+
+            label = "GNUMB";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
