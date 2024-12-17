@@ -13,7 +13,7 @@ layers:
   - U
   - Y
   - {t: '''', s: '"'}
-  - {t: GAMES, h: toggle}
+  - {t: GAMING, h: toggle}
   - $$mdi:apple-keyboard-caps$$
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: LGUI}
@@ -88,7 +88,7 @@ layers:
   - PG UP
   - PG DN
   - END
-  - {t: GAMES, h: toggle}
+  - {t: GAMING, h: toggle}
   - RCLK
   - {t: ., s: '>'}
   - {t: '0', s: ), type: held}
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  GAMES:
+  GAMING:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -209,7 +209,7 @@ layers:
   - I
   - O
   - P
-  - {t: GAMES, h: toggle}
+  - {t: GAMING, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -235,7 +235,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-space$$
