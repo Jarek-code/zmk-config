@@ -73,14 +73,36 @@
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &tog 4
-&kp CAPS   &hm LCTRL A  &hm LGUI R &hm RALT S &hm LSHIFT T &hm RALT G    &kp DOWN_ARROW       &hm LALT M  &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
+&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &tog 1
+&kp CAPS   &hm LCTRL A  &hm LGUI R &hm RALT S &hm LSHIFT T &hm LALT G    &kp DOWN_ARROW       &hm LALT M  &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K       &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
-                        &kp C_MUTE &kp ESC    &lt 1 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
+                        &kp C_MUTE &kp ESC    &lt 2 SPACE  &lt 4 TAB     &kp RIGHT_ARROW      &lt 3 ENTER &lt 2 BSPC   &kp DEL
                                                             &kp LCLK
             >;
 
             label = "ALPHAS";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        gaming_layer {
+            display-name = "GAMING";
+
+            // --------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
+            // | SHIFT|  A  |  R  |  S  |  T  |  G  |                ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
+            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  |  ↑   |
+            //                    | ESC | SPC | TAB |                →    | ENT | BCK  | DEL |
+            //                                                      click
+
+            bindings = <
+&kp TAB    &kp Q        &kp W      &kp E      &kp R        &kp T         &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &tog 1
+&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &mo 5
+&kp LCTRL  &kp Z        &kp X      &kp C      &kp V        &kp B         &kp LEFT_ARROW       &kp N       &kp M        &kp COMMA  &kp DOT    &kp FSLH    &trans
+                        &kp C_MUTE &kp ESC    &kp SPACE  &trans     &kp RIGHT_ARROW      &trans &trans   &kp DEL
+                                                            &kp LCLK
+            >;
+
+            label = "GAMING";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -96,7 +118,7 @@
             bindings = <
 &rgb_ug RGB_OFF  &kp LBKT     &kp N7  &kp N8   &kp N9  &kp RBKT   &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &rgb_ug RGB_ON   &kp SEMI     &kp N4  &kp N5   &kp N6  &kp EQUAL  &mmv MOVE_DOWN   &trans           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans 
-&rgb_ug RGB_EFF  &kp GRAVE    &kp N1  &kp N2   &kp N3  &kp BSLH   &mmv MOVE_LEFT   &kp INS          &kp HOME      &kp PG_UP     &kp PG_DN     &kp END       &to 4       
+&rgb_ug RGB_EFF  &kp GRAVE    &kp N1  &kp N2   &kp N3  &kp BSLH   &mmv MOVE_LEFT   &kp INS          &kp HOME      &kp PG_UP     &kp PG_DN     &kp END       &to 1       
                             &kp RCLK  &kp DOT  &kp N0  &kp MINUS  &mmv MOVE_RIGHT  &trans          &trans          &trans
                                                                                         &mkp LCLK
             >;
@@ -140,27 +162,6 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_4 {
-            display-name = "GAMING";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
-            // | SHIFT|  A  |  R  |  S  |  T  |  G  |                ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
-            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  |  ↑   |
-            //                    | ESC | SPC | TAB |                →    | ENT | BCK  | DEL |
-            //                                                      click
-
-            bindings = <
-&kp TAB    &kp Q        &kp W      &kp E      &kp R        &kp T         &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &tog 4
-&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &mo 5
-&kp LCTRL  &kp Z        &kp X      &kp C      &kp V        &kp B         &kp LEFT_ARROW       &kp N       &kp M        &kp COMMA  &kp DOT    &kp FSLH    &trans
-                        &kp C_MUTE &kp ESC    &kp SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
-                                                            &kp LCLK
-            >;
-
-            label = "GAMING";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
 
         layer_5 {
             display-name = "GNUMB";
