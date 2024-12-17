@@ -73,7 +73,7 @@
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &kp ENTER
+&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &to 4
 &kp CAPS   &hm LCTRL A  &hm LGUI R &hm RALT S &hm LSHIFT T &hm RALT G    &kp DOWN_ARROW       &hm LALT M  &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K       &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
                         &kp C_MUTE &kp ESC    &lt 1 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
@@ -85,7 +85,7 @@
         };
 
         number_layer {
-            display-name = "NUMNAV";
+            display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
             // | RGBOF |  [  |  7  |  8  |  9  |  ]  |   | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
@@ -106,7 +106,7 @@
         };
 
         nav_layer {
-            display-name = "SYMMVT";
+            display-name = "SYMBOL";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  {  |  &  |  *  |  () |  }  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -138,6 +138,27 @@
 
             label = "FN";
             sensor-bindings = <&scroll_encoder>;
+        };
+        layer_4 {
+            display-name = "GAMES";
+
+            // --------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  F  |  P  |  B  |                ↑    |  J  |  L   |  U  |  Y  |  '  | ENTR |      &kp UP_ARROW 
+            // | SHIFT|  A  |  R  |  S  |  T  |  G  |                ↓    |  M  |  N   |  E  |  I  |  O  |  ;   | 
+            // | CTRL |  Z  |  X  |  C  |  D  |  V  |                ←    |  K  |  H   |  ,  |  .  |  /  |  ↑   |
+            //                    | ESC | SPC | TAB |                →    | ENT | BCK  | DEL |
+            //                                                      click
+
+            bindings = <
+&kp TAB    &kp Q        &kp W      &kp E      &kp R        &kp T         &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &to 0
+&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &kp SEMI
+&kp LCTRL  &kp Z        &kp X      &kp C      &kp V        &kp B         &kp LEFT_ARROW       &kp N       &kp M        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
+                        &kp C_MUTE &kp ESC    &kp SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
+                                                            &kp LCLK
+            >;
+
+            label = "GAMES";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
