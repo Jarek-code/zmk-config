@@ -73,7 +73,7 @@
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &to 4
+&kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &tog 4
 &kp CAPS   &hm LCTRL A  &hm LGUI R &hm RALT S &hm LSHIFT T &hm RALT G    &kp DOWN_ARROW       &hm LALT M  &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K       &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
                         &kp C_MUTE &kp ESC    &lt 1 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
@@ -96,7 +96,7 @@
             bindings = <
 &rgb_ug RGB_OFF  &kp LBKT     &kp N7  &kp N8   &kp N9  &kp RBKT   &mmv MOVE_UP     &bt BT_CLR_ALL   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &rgb_ug RGB_ON   &kp SEMI     &kp N4  &kp N5   &kp N6  &kp EQUAL  &mmv MOVE_DOWN   &trans           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans 
-&rgb_ug RGB_EFF  &kp GRAVE    &kp N1  &kp N2   &kp N3  &kp BSLH   &mmv MOVE_LEFT   &kp INS          &kp HOME      &kp PG_UP     &kp PG_DN     &kp END       &trans       
+&rgb_ug RGB_EFF  &kp GRAVE    &kp N1  &kp N2   &kp N3  &kp BSLH   &mmv MOVE_LEFT   &kp INS          &kp HOME      &kp PG_UP     &kp PG_DN     &kp END       &to 4       
                             &kp RCLK  &kp DOT  &kp N0  &kp MINUS  &mmv MOVE_RIGHT  &trans          &trans          &trans
                                                                                         &mkp LCLK
             >;
@@ -150,8 +150,8 @@
             //                                                      click
 
             bindings = <
-&kp TAB    &kp Q        &kp W      &kp E      &kp R        &kp T         &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &to 0
-&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &kp SEMI
+&kp TAB    &kp Q        &kp W      &kp E      &kp R        &kp T         &kp UP_ARROW         &kp Y       &kp U        &kp I      &kp O      &kp P       &tog 4
+&kp LSHIFT &kp A        &kp S      &kp D      &kp F        &kp G         &kp DOWN_ARROW       &kp H       &kp J        &kp K      &kp L      &kp SEMI    &to 0
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp V        &kp B         &kp LEFT_ARROW       &kp N       &kp M        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
                         &kp C_MUTE &kp ESC    &kp SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
                                                             &kp LCLK
