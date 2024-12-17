@@ -74,7 +74,7 @@
 
             bindings = <
 &kp TAB    &kp Q        &kp W      &kp F      &kp P        &kp B         &kp UP_ARROW         &kp J       &kp L        &kp U      &kp Y      &kp SQT     &kp ENTER
-&kp CAPS   &hm LCTRL A  &hm LGUI R &hm LALT S &hm LSHIFT T &kp G         &kp DOWN_ARROW       &kp M       &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
+&kp CAPS   &hm LCTRL A  &hm LGUI R &hm RALT S &hm LSHIFT T &hm RALT G    &kp DOWN_ARROW       &hm LALT M  &hm RSHIFT N &hm RALT E &hm RGUI I &hm RCTRL O &kp SEMI
 &kp LCTRL  &kp Z        &kp X      &kp C      &kp D        &kp V         &kp LEFT_ARROW       &kp K       &kp H        &kp COMMA  &kp DOT    &kp FSLH    &kp UP_ARROW
                         &kp C_MUTE &kp ESC    &lt 1 SPACE  &lt 3 TAB     &kp RIGHT_ARROW      &lt 2 ENTER &lt 1 BSPC   &kp DEL
                                                             &kp LCLK
