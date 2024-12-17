@@ -88,7 +88,7 @@ layers:
   - PG UP
   - PG DN
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: GAMES, h: toggle}
   - RCLK
   - {t: ., s: '>'}
   - {t: '0', s: ), type: held}
@@ -209,7 +209,7 @@ layers:
   - I
   - O
   - P
-  - {t: ALPHAS, h: toggle}
+  - {t: GAMES, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -222,7 +222,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: ;, s: ':'}
+  - {t: ALPHAS, h: toggle}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
