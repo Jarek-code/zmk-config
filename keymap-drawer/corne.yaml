@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
+  ALPHAS:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -19,9 +19,9 @@ layers:
   - {t: R, h: LGUI}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
+  - {t: G, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:arrow-down-bold$$
-  - M
+  - {t: M, h: '$$mdi:apple-keyboard-option$$'}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: E, h: '$$mdi:apple-keyboard-option$$'}
   - {t: I, h: RGUI}
@@ -42,14 +42,14 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-space$$', h: number}
-  - {t: '$$mdi:keyboard-tab$$', h: '3'}
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-tab$$', h: FN}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', h: nav}
-  - {t: '$$mdi:backspace$$', h: number}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:backspace$$', h: NUMBER}
   - $$mdi:backspace-reverse-outline$$
   - LCLK
-  number:
+  NUMBER:
   - RGB OFF
   - {t: '[', s: '{'}
   - {t: '7', s: '&'}
@@ -98,7 +98,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  nav:
+  SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '{'
   - '&'
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  '3':
+  FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
