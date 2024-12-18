@@ -13,7 +13,7 @@ layers:
   - U
   - Y
   - {t: '''', s: '"'}
-  - {t: GAMING, h: toggle}
+  - {t: QWERTY, h: toggle}
   - $$mdi:apple-keyboard-caps$$
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: LGUI}
@@ -49,7 +49,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - $$mdi:backspace-reverse-outline$$
   - LCLK
-  GAMING:
+  QWERTY:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -62,7 +62,7 @@ layers:
   - I
   - O
   - P
-  - {t: GAMING, h: toggle}
+  - {t: QWERTY, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -75,7 +75,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - GNUMB
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -137,7 +137,7 @@ layers:
   - PG UP
   - PG DN
   - END
-  - {t: GAMING, h: toggle}
+  - {t: QWERTY, h: toggle}
   - RCLK
   - {t: ., s: '>'}
   - {t: '0', s: ), type: held}
@@ -245,52 +245,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  GNUMB:
-  - $$mdi:keyboard-tab$$
-  - {t: '[', s: '{'}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: ']', s: '}'}
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ;, s: ':'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '=', s: +}
-  - $$mdi:arrow-down-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {type: held}
-  - $$mdi:apple-keyboard-control$$
-  - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: \, s: '|'}
-  - $$mdi:arrow-left-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
-  - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
-  - LCLK
