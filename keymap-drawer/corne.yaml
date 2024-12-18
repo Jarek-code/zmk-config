@@ -49,6 +49,55 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUMBER}
   - $$mdi:backspace-reverse-outline$$
   - LCLK
+  GAMING:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: GAMING, h: toggle}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-down-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - GNUMB
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-left-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-off$$
+  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - LCLK
   NUMBER:
   - RGB OFF
   - {t: '[', s: '{'}
@@ -196,55 +245,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  GAMING:
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: GAMING, h: toggle}
-  - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-down-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - GNUMB
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-left-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
-  - $$mdi:keyboard-esc$$
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: FN}
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
-  - $$mdi:backspace-reverse-outline$$
-  - LCLK
   GNUMB:
   - $$mdi:keyboard-tab$$
   - {t: '[', s: '{'}
