@@ -7,7 +7,11 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # El reusable workflow sale del mismo fork que compila config/west.yml
+    # (urob/zmk, Zephyr v3.5.0+zmk-fixes); el de zmkfirmware/zmk@main asume
+    # Zephyr 4.1 y su post-check usa `west boards --format "{qualifiers}"`,
+    # que no existe en ese Zephyr y tumba el run después de compilar.
+    uses: urob/zmk/.github/workflows/build-user-config.yml@main
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
